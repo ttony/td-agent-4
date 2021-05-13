@@ -11,4 +11,4 @@ EOF
 
 yum check-update
 yes | yum install -y td-agent
-yes | yum install -y make
+yes | yum groupinstall -y 'Development Tools'
