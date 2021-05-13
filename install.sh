@@ -1,3 +1,4 @@
+microdnf install yum
 rpm --import https://packages.treasuredata.com/GPG-KEY-td-agent
 
 cat >/etc/yum.repos.d/td.repo <<'EOF';
@@ -9,4 +10,4 @@ gpgkey=https://packages.treasuredata.com/GPG-KEY-td-agent
 EOF
 
 yum check-update
-yes | yum install -y td-agent
+yes | yum install -y td-agent make gcc
