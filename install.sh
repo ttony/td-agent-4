@@ -11,3 +11,4 @@ EOF
 
 yum check-update
 yes | yum install -y td-agent
+yes | yum install -y make
