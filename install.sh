@@ -1,4 +1,3 @@
-microdnf install yum
 rpm --import https://packages.treasuredata.com/GPG-KEY-td-agent
 
 cat >/etc/yum.repos.d/td.repo <<'EOF';
@@ -11,4 +10,3 @@ EOF
 
 yum check-update
 yes | yum install -y td-agent
-yes | yum groupinstall -y 'Development Tools'
